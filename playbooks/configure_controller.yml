@@ -4,6 +4,7 @@
   connection: local
   vars:
     controller_validate_certs: "{{ controller_validate_certs }}"
+    controller_hostname: "aap24.beaverdam.com"
   tasks:
     - name: Include vars from configs directory
       ansible.builtin.include_vars:
