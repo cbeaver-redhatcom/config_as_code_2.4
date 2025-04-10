@@ -2,6 +2,8 @@
 - name: Playbook to configure ansible controller post installation
   hosts: localhost
   connection: local
+  vars:
+    controller_validate_certs: "{{ controller_validate_certs }}"
   tasks:
     - name: Include vars from configs directory
       ansible.builtin.include_vars:
